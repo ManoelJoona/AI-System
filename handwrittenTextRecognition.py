@@ -1,4 +1,5 @@
 # 1. 必要なライブラリ
+!pip install japanize_matplotlib
 import tensorflow as tf
 from tensorflow.keras.datasets import mnist
 from tensorflow.keras.models import Sequential
@@ -6,6 +7,7 @@ from tensorflow.keras.layers import Dense, Flatten
 from tensorflow.keras.utils import to_categorical
 import matplotlib.pyplot as plt
 import numpy as np
+import japanize_matplotlib
 
 # 2. データの読み込みと前処理
 (x_train, y_train), (x_test, y_test) = mnist.load_data()
